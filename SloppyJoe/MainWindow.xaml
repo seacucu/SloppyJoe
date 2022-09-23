@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SloppyJoe"
         mc:Ignorable="d"
-        Title="歡迎光臨極光三明治店！" Height="350" Width="500">
+        Title="歡迎光臨極光三明治店！" Height="350" Width="550">
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -20,29 +20,30 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        
-        <TextBlock x:Name="item1" FontSize="18" Text="item"/>
+
+        <TextBlock x:Name="item1" FontSize="18" Text="item" Grid.Row="0"/>
         <TextBlock x:Name="item2" FontSize="18" Text="item" Grid.Row="1"/>
         <TextBlock x:Name="item3" FontSize="18" Text="item" Grid.Row="2"/>
         <TextBlock x:Name="item4" FontSize="18" Text="item" Grid.Row="3"/>
         <TextBlock x:Name="item5" FontSize="18" Text="item" Grid.Row="4"/>
         <TextBlock x:Name="item6" FontSize="18" Text="item" Grid.Row="5"/>
 
-        <TextBlock x:Name="price1" FontSize="18" HorizontalAlignment="Right" Text="$00.00"
-                   Grid.Column="1"/>
-        <TextBlock x:Name="price2" FontSize="18" HorizontalAlignment="Right" Text="$00.00"
+        <TextBlock x:Name="price1" FontSize="18" HorizontalAlignment="Left" Text="NT$000"
+                   Grid.Column="1" Grid.Row="0"/>
+        <TextBlock x:Name="price2" FontSize="18" HorizontalAlignment="Left" Text="NT$000"
                    Grid.Column="1" Grid.Row="1"/>
-        <TextBlock x:Name="price3" FontSize="18" HorizontalAlignment="Right" Text="$00.00"
+        <TextBlock x:Name="price3" FontSize="18" HorizontalAlignment="Left" Text="NT$000"
                    Grid.Column="1" Grid.Row="2"/>
-        <TextBlock x:Name="price4" FontSize="18" HorizontalAlignment="Right" Text="$00.00"
+        <TextBlock x:Name="price4" FontSize="18" HorizontalAlignment="Left" Text="NT$000"
                    Grid.Column="1" Grid.Row="3"/>
-        <TextBlock x:Name="price5" FontSize="18" HorizontalAlignment="Right" Text="$00.00"
+        <TextBlock x:Name="price5" FontSize="18" HorizontalAlignment="Left" Text="NT$000"
                    Grid.Column="1" Grid.Row="4"/>
-        <TextBlock x:Name="price6" FontSize="18" HorizontalAlignment="Right" Text="$00.00"
+        <TextBlock x:Name="price6" FontSize="18" HorizontalAlignment="Left" Text="NT$000"
                    Grid.Column="1" Grid.Row="5"/>
 
-        <TextBlock x:Name="addEgg" FontSize="18" HorizontalAlignment="Right"  VerticalAlignment="Bottom"
-                    Grid.ColumnSpan="2" Grid.Row="6" FontStyle="Italic" Text="加蛋" />
+        <TextBlock x:Name="addEgg" FontSize="18" FontWeight="Bold" Text="加蛋加$00元"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                   Grid.Row="6" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
